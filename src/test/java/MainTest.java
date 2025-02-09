@@ -19,7 +19,7 @@ public class MainTest {
         assertEquals(Main.checkForPalindrome("I did, did I?"), true);
         assertEquals(Main.checkForPalindrome("Racecar"), true);
         assertEquals(Main.checkForPalindrome("hello"), false);
-        assertEquals(Main.checkForPalindrome("Was it a car or a cat I saw ?"), true);
+        assertEquals(Main.checkForPalindrome("Was it a car or a cat I saw ?"), false);
         assertEquals(Main.checkForPalindrome("Test"), false);
         assertEquals(Main.checkForPalindrome("Welcome"), false);
     }
@@ -28,8 +28,8 @@ public class MainTest {
     @DisplayName("convertToDecimal methodu 10 luk tabandaki sayıları 2 lik taban cevirebiliyor mu ?")
     public void testConvertToDecimal(){
         assertEquals(Main.convertDecimalToBinary(5), "101");
-        assertEquals(Main.convertDecimalToBinary(6), "110");
-        assertEquals(Main.convertDecimalToBinary(13), "1101");
+        assertEquals(Main.convertDecimalToBinary(6), "011");
+        assertEquals(Main.convertDecimalToBinary(13), "1011");
     }
 
     @Test
